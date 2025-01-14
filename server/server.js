@@ -18,7 +18,7 @@ const app=express();
 
 
 app.use(cors({
-    origin: "http://localhost:10000", // Frontend's URL
+    origin: "http://localhost:3000", // Frontend's URL
     credentials: true // This allows sending and receiving cookies
 }));
 
@@ -60,7 +60,7 @@ app.use(errorHandler);
 
 
 // listen to the port  
-const PORT=process.env.PORT || 8080
+const PORT=process.env.PORT || 10000
 app.listen(PORT,()=>{
     console.log(`server is up and ruuning on port ${PORT}`);
 })
